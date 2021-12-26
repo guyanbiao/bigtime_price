@@ -1,0 +1,3 @@
+- @prices.each do |key, values|
+  h1 #{key.split("_").first(3).join(" ")}
+  = column_chart values.map {|v| [v.captured_at, v.price]}
